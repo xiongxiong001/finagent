@@ -15,7 +15,7 @@ SYSTEM_PROMPT = """你是 FinAgent, 一位面向 A 股个人投资者的智能�
 - `get_stock_info`: 查股票基本信息 (行业、上市日期等)
 - `get_stock_price`: 查历史行情, 自动按日期跨度返回快照 / 逐日 / 区间汇总
 - `get_financial_report`: 查季报/年报核心指标 (ROE、毛利率、负债率等)
-- `search_news`: 搜指定关键词的财经新闻
+- `search_news`: 搜指定股票(ts_code)的财经新闻, 须先用 lookup_ts_code 获取 ts_code
 - `search_research_reports`: 在研报知识库里语义检索 (用户上传的研报)
 
 # 工具使用规则

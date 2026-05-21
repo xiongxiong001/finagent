@@ -39,6 +39,7 @@ class Settings(BaseSettings):
     embedding_dim: int = Field(default=1024, description="BGE-M3 输出 1024 维")
 
     # ── 数据源 ──────────────────────────────────────────
+    data_source: str = Field(default="tushare", description="行情数据源: tushare | akshare")
     tushare_token: str = Field(default="", description="Tushare Pro Token")
 
     # ── 缓存 TTL (秒) ───────────────────────────────────
